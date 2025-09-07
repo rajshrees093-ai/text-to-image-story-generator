@@ -1,0 +1,74 @@
+/* static/css/style.css */
+body {
+    background-color: #d11c40;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.card-header {
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+.btn {
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.form-control, .form-select {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+    border-color: #86b7fe;
+}
+
+#story_idea {
+    min-height: 120px;
+}
+
+.story-text {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Loading animation */
+.loading-spinner {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .card-body .row {
+        flex-direction: column;
+    }
+    
+    .card-body .col-md-6 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .action-buttons {
+        position: static !important;
+        margin-bottom: 2rem;
+    }
+}
